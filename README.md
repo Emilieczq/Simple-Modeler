@@ -1,5 +1,4 @@
 # Simple Modeler (OpenGL/GLUT)
-
 This is a simple 3D modeling system using OpenGL and C++. 
 ![](figure.png)
 
@@ -41,3 +40,4 @@ Under the path of the folder, command `make`
 ## Remarks
 - For some raisons (limits, operations...), the translation is according to the scene's xyz not the selected object itself.
 - The selected object will be covered by a wireframe cube and shows its axes x (red), y (green) and z (blue) and the selected axis is cyan.
+- At the beginning, the two little sphere represent lights which can be translated.
