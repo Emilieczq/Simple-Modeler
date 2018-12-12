@@ -1,6 +1,9 @@
 # Simple Modeler (OpenGL/GLUT)
 This is a simple 3D modeling system using OpenGL and C++. 
-![](figure.png)
+
+<p align="center">
+  <img width="500" src="figure.png"/>
+</p>
 
 ## Functions
 1. **Scene Object Structure & Rendering:** All objects are stored in a list. The display loop iterates over the loop.
@@ -12,7 +15,7 @@ This is a simple 3D modeling system using OpenGL and C++.
 Under the path of the folder, command `make`
 
 | Controls | Functions |
-|----------|:-------------:|
+|:----------:|-------------|
 | q/esc | quit |
 | SPACE | create an object at a random position |
 | Left click | select an object if possible |
