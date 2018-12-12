@@ -10,9 +10,10 @@ This is a simple 3D modeling system using OpenGL and C++.
 2. **Adding/Deleting Objects:** You can create an object at a random position of one of the five defined shapes (Cube, Sphere, Cone, Torus, Dodecahedron).
 3. **Interacting with Objects:** You can rotate/translate/scale the selected object with some commands.
 4. **Mouse-Ray Picking:** This function performs both a ray-plane intersection test and a ray-box intersection test.
+5. **Save/Load txt file:** You can save the current scene to a txt file. You NEED to enter the file name (without .txt). All information about the scene and objects will be saved. To load a txt file, you need to enter the file name (without .txt).
   
 ## Instruction
-Under the path of the folder, command `make`
+Under the path of the folder, use the command `make` to run the program.
 
 | Controls | Functions |
 |:----------:|-------------|
@@ -38,7 +39,7 @@ Under the path of the folder, command `make`
 | 1/2/3/4/5 | change current drawing material |
 | m | apply the current drawing material to the selected object, not working if no object is selected |
 
-**Example:** if you want to translate an object in axis x, you should left click this object then press x then press UP or DOWN.
+> **Example:** if you want to translate an object in axis x, you should left click this object then press x then press UP or DOWN.
 
 ## Remarks
 - For some raisons (limits, operations...), the translation is according to the scene's xyz not the selected object itself.
