@@ -361,20 +361,20 @@ void drawPlane(void)
     glNormal3f(0, 1, 0);
     glVertex3d(0, 0, 0);
     glNormal3f(0, 1, 0);
-    glVertex3d(100, 0, 0);
+    glVertex3d(0, 0, 100);
     glNormal3f(0, 1, 0);
     glVertex3d(100, 0, 100);
     glNormal3f(0, 1, 0);
-    glVertex3d(0, 0, 100);
+    glVertex3d(100, 0, 0);
     // back
     glNormal3f(1, 0, 0);
     glVertex3d(0, 0, 0);
     glNormal3f(1, 0, 0);
-    glVertex3d(0, 0, 100);
+    glVertex3d(0, 100, 0);
     glNormal3f(1, 0, 0);
     glVertex3d(0, 100, 100);
     glNormal3f(1, 0, 0);
-    glVertex3d(0, 100, 0);
+    glVertex3d(0, 0, 100);
     // floor
     glNormal3f(0, 0, 1);
     glVertex3d(0, 0, 0);
@@ -459,8 +459,6 @@ void display(void)
     glRotatef(angleY, 0, 1, 0);
     glRotatef(angleZ, 0, 0, 1);
     glTranslatef(-50, -50, -50);
-
-    glDisable(GL_CULL_FACE); // disable backface culling for walls and floor to avoid them being culled
 
     /* draw planes */
     setMaterial(7);
